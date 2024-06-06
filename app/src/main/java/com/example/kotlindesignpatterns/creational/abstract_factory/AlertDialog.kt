@@ -1,5 +1,14 @@
 package com.example.kotlindesignpatterns.creational.abstract_factory
 
+/**
+ * Mainly useful if we need to inject factory via DI
+ *          OR
+ * If we need to create a set of related objects for example - Car has engine object, tyre object, brakes object etc
+ * abstract car factory has methods for creating engine, tyre, brake etc
+ * FordCarFactory - creates concrete implementation based on their needs
+ * FiatCarFactoru - creates concrete implementation based on their needs
+ */
+
 interface AlertDialog{
     fun show()
 }
