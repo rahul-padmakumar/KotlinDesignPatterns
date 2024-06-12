@@ -26,9 +26,12 @@ class CompositeComponent(private val name: String): Component{
     }
 
     override fun showPrice() {
+        println("*****************")
+        println(name)
         individualComponents.forEach {
             it.showPrice()
         }
+        println("**********************")
     }
 
     override fun getPrice(): Int = individualComponents.sumOf { it.getPrice() }
